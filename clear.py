@@ -1,4 +1,4 @@
 import os
 
-def run(setpathfunc, osdir, username, curpath, args):
+def run(funcs, ivars):
     os.system("cls" if os.name=="nt" else "clear")
