@@ -1,6 +1,8 @@
 import os
 
-def run(setpathfunc, osdir, username, curpath, args):
+def run(funcs, ivars):
+    args = ivars[3]
+    curpath = ivars[2]
     for path in os.listdir(curpath):
         # i hate this
         if os.path.isfile(curpath + "/" + path) == True:
