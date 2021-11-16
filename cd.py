@@ -1,6 +1,8 @@
 import os
 
-def run(setpathfunc, osdir, username, curpath, args):
+def run(funcs, ivars):
+    args = ivars[3]
+    curpath = ivars[2]
     if len(args) != 2:
         print("Usage:")
         print("\tcd [dir]")
